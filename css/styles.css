@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@500&family=Silkscreen:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Silkscreen", "Marhey", sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #27374D;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, Main content, Footer */
+    min-height: 100vh;
+}
+
+header {
+    background-color: #9DB2BF;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    grid-row: 1; /* Header goes in the first row */
+}
+
+h1 {
+    color: #fff
+}
+
+h2 {
+    color: #eef4fa;
+    font-weight: 400;
+    font-size: 2rem;
+    max-width: 100%;
+    text-align: left;
+}
+
+.container {
+    width: 90vw; /* Set the width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid columns */
+    gap: 20px; /* Gap between grid items */
+    padding: 20px; /* Padding for main content */
+    align-content: start; /* Align grid items at the start */
+    grid-row: 2; /* Main content goes in the second row */
+}
+
+
+article {
+    background-color: #526D82;
+    border: 0.2vw solid #ddd;
+    border-radius: 0.5vw;
+    overflow-wrap: break-word;
+    padding: 1rem;
+    text-align: center;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article img {
+    width: 100%;
+    height: 250px;
+    object-fit: fill;
+    border-radius: 0.8vw;
+}
+
+.article-content {
+    align-self: flex-end;
+}
+
+
+
+footer {
+    background-color: #9DB2BF;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    grid-row: 3;
+}
+
+img {
+    display: flex;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 250px;
+}
+
+#info-box {
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    margin: 10vh;
+    padding: 2vw;
+    background-color: #DDE6ED;
+    width: auto;
+    height: auto;
+    min-width: 70vw;
+    min-height: 75vh;
+    justify-self: center;
+    flex-direction: column;
+    gap: 2vw;
+
+}
+#info-box h2, #info-box p {
+    color: #27374D;
+}
+#div-top {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: space-between;
+}
+#div-top h3 {
+    color: #9DB2BF;
+}
+.favorited {
+    color: gold !important;
+}
